@@ -1,0 +1,185 @@
+html {
+    background-image: url("../images/bats.gif");
+    background-repeat: repeat;
+}
+
+/* Header */
+
+header {
+    background-image: -webkit-linear-gradient(45deg, white, orange 75%, black 100%);
+    background-image: -moz-linear-gradient(45deg, white, orange 75%, black 100%);
+    background-image: -ms-linear-gradient(45deg, white, orange 75%, black 100%);
+    background-image: -khtml-linear-gradient(45deg, white, orange 75%, black 100%);
+    background-image: -o-linear-gradient(45deg, white, orange 75%, black 100%);
+    height: 100px;
+}
+
+header h2 {
+    font-size: 230%;
+    font-style: italic;
+    text-indent: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 10px;
+    color: orange;
+    text-shadow: 2px 2px black;
+}
+header h3 {
+    font-size: 125%;
+    text-indent: 25px;
+    margin-top: 0;
+}
+
+header img {
+    float: left;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+body {
+    width: 800px;
+    background-color: white;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 0px 15px 15px black;
+}
+
+/* Main */
+
+main {
+    float: right;
+    width: 640px;
+}
+
+main h1 { 
+    font-size: 140%;
+}
+
+main h1::first-letter{
+    font-size: 200%;
+}
+
+main h2 {
+    font-size: 125%;
+}
+main h3 {
+    font-size: 110%;
+}
+
+main ul li {
+    padding: 2px;
+}
+
+a:link, a:visited {
+    font-weight: bold;
+    color: orange  
+}
+
+a:hover {
+    font-weight: bold;
+    color: green;
+}
+
+#top-nav ul {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#top-nav ul li {
+    float: left;
+    width: 20%;
+}
+
+#top-nav ul li a:hover, #top-nav ul li a:focus {
+    background-color: gray; 
+}
+
+#top-nav ul li a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: normal;
+    padding: 5px;
+}
+
+#top-nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#top-nav ul ul li {
+    float: none;
+}
+
+#top-nav ul li:hover > ul {
+    display: block;
+}
+
+#top-nav > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#top-nav ul li a:active {
+    color: orange;
+}
+
+.home {
+    color: orange !important;
+}
+
+section{
+    float: left;
+    width: auto;
+    height: 100%;
+}
+
+aside{
+    width: 160px;
+    float: left;
+}
+
+aside ul {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+aside ul li {
+    width: 60%;
+    margin-bottom: .5em;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: orange;
+}
+
+aside ul li a:link, aside ul li a:hover, aside ul li a:visited {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* Footer */
+footer {
+    height: 100%;
+    font-size: 90%;
+    text-align: center;
+    padding: 10px;
+    border-top: 5px solid black;
+    background-image: -webkit-linear-gradient(240deg, white, orange 75%, black 100%);
+    background-image: -moz-linear-gradient(240deg, white, orange 75%, black 100%);
+    background-image: -ms-linear-gradient(240deg, white, orange 75%, black 100%);
+    background-image: -khtml-linear-gradient(240deg, white, orange 75%, black 100%);
+    background-image: -o-linear-gradient(240deg, white, orange 75%, black 100%);
+    clear: both;
+}
