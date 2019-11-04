@@ -1,6 +1,6 @@
 ﻿/* Cole Williamson */
 html {
-	background-image: url("../images/bats.gif");	
+	background-image: url("images/bats.gif");	
 }
 /* Assuming a browser default font-size of 16px */
 body  {
@@ -164,5 +164,68 @@ footer p {
 	font-size: 90%;
 	text-align: center;
 }
+
+@media only screen and (max-width: 800px) {
+  html{
+    background-image: none;
+  }
+  body{
+    font-size: 90%;
+    box-shadow: none;
+  }
+  nav{
+    width: 20%;
+    float: left;
+  }
+  nav ul li {
+    width: 100%;
+    display: inline;
+    position: relative;
+  }
+  
+  aside{
+    width: 100%;
+  }
+  aside ul{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  aside ul li {
+    width: 20%;
+  }
+  aside ul li a {
+    text-align: center;
+    padding: 1em 5%;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  aside ul{
+    flex-direction: column;
+  }
+  aside ul li{
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 479px){
+  header h2 {
+    font-size: 230%;
+  }
+  header h3 {
+    font-size: 125%;
+  }
+}
+
+
+
+
+
+
+
+
 
 
